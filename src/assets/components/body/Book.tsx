@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import type { Book } from "../../types/Book";
 
 export default function Book() {
 
-    const [books, setBooks] = useState([]);
+    const [books, setBooks] = useState<Book[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
