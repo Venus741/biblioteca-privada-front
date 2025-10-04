@@ -10,7 +10,7 @@ export default function Book() {
         fetch("https://biblioteca-privada.onrender.com/books")
         .then((res) => res.json())
         .then((books) => {
-            console.log(books)
+            console.log(books);
             setBooks(books);
             setLoading(false);
         })
